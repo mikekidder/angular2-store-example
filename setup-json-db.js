@@ -1,3 +1,5 @@
+console.log("Node :: Building json-db.js file...")
+
 var fs = require('fs'),
     path = require('path'),
     dbFilePath = path.join(__dirname, 'db.json'),
@@ -16,3 +18,4 @@ fs.exists(dbFilePath, function(exists) {
     fs.writeFile(dbFilePath, JSON.stringify(dbContent), {encoding: 'utf-8'});
   }
 });
+
